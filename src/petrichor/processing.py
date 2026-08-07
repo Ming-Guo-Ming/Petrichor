@@ -1371,7 +1371,7 @@ def _load_rc_table() -> np.ndarray:
         produce a wrong Rc for every site.
     """
     try:
-        from src.rc_table import cutoff_rigidity as rc_table
+        from .rc_table import cutoff_rigidity as rc_table
     except Exception as exc:
         raise RuntimeError(
             "[Rc] Could not import src.rc_table.cutoff_rigidity. "
