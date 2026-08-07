@@ -34,10 +34,10 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-from src.processing import *
-from src.analysis import run_analysis_exports
-from src.visualization import *
-import src.processing as processing
+from .processing import *
+from .analysis import run_analysis_exports
+from .visualization import *
+from . import processing
 
 
 # ==============================================================================
