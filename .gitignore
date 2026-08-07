@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Build outputs
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Keep work directories but ignore generated contents
+input/*
+!input/.gitkeep
+cache/*
+!cache/.gitkeep
+output/*
+!output/.gitkeep
+
+# macOS
+.DS_Store
