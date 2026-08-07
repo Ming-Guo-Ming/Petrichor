@@ -29,7 +29,7 @@ import numbers
 
 import pandas as pd
 
-from src.processing import PARTICLE_DENSITY
+from .processing import PARTICLE_DENSITY
 
 
 def _cfg_get(cfg: dict, key: str, default=None):
@@ -536,7 +536,7 @@ def run_analysis_exports(
     write_run_metadata(site_out=site_out, metadata=metadata, decimals=decimals)
 
     try:
-        from src.processing import write_site_summary
+        from .processing import write_site_summary
 
         write_site_summary(
             site_out=site_out,
