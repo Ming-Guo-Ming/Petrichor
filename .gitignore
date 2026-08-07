@@ -12,13 +12,14 @@ dist/
 venv/
 env/
 
-# Keep work directories but ignore generated contents
-input/*
-!input/.gitkeep
-cache/*
-!cache/.gitkeep
-output/*
-!output/.gitkeep
+# User data and generated files
+input/
+cache/
+output/
+
+# Credentials
+.env
+.cdsapirc
 
 # macOS
 .DS_Store
