@@ -37,5 +37,8 @@ Homepage = "https://github.com/Ming-Guo-Ming/Petrichor"
 Documentation = "https://github.com/Ming-Guo-Ming/Petrichor/wiki"
 Repository = "https://github.com/Ming-Guo-Ming/Petrichor"
 
+[project.scripts]
+petrichor = "petrichor.main:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
