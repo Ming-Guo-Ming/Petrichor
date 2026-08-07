@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "petrichor-crns"
+version = "0.1.0"
+description = "A Python tool for processing cosmic-ray neutron sensor observations."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+
+authors = [
+  { name = "Ming Guo" },
+  { name = "Rafael Rosolem" },
+  { name = "Miguel Rico-Ramirez" },
+  { name = "Shams Rahman" }
+]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "scipy",
+  "beautifulsoup4"
+]
+
+[project.optional-dependencies]
+era5 = [
+  "cdsapi>=0.7.7",
+  "xarray",
+  "netcdf4"
+]
+
+[project.urls]
+Homepage = "https://github.com/Ming-Guo-Ming/Petrichor"
+Documentation = "https://github.com/Ming-Guo-Ming/Petrichor/wiki"
+Repository = "https://github.com/Ming-Guo-Ming/Petrichor"
+
+[tool.setuptools.packages.find]
+where = ["src"]
