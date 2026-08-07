@@ -33,7 +33,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-from src.processing import TIME_COL
+from .processing import TIME_COL
 
 
 # -------- Internal utilities ---------------------------------------------------
